@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box; /* takes into account borders as well */
+}
+
+.main {
+    width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.btn-start, .btn-clear {
+    background-image: linear-gradient(#fa923f, red);
+    color: white;
+    border: 1px solid #512751;
+    border-radius: 15px;
+    margin: 5px auto;
+    display: inline-block;
+    padding: 10px 28px;
+}
+
+.btn-clear {
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+}
+
+.container {
+    width: 800px;
+    height: 900px;
+    border: 2px solid black;
+    margin: 10px auto;
+    box-shadow: 6px 6px 20px darkslategrey;
+    background-image: url("./courses/pexels-photo-688016.jpeg");
+    background-size: cover;
+    background-position: center;
+    /* this is to have grid */
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas:
+        "door3 door13 door7 door21"
+        "door22 door6 door17 door11"
+        "door12 door23 door16 door24"
+        "door9 door20 door8 door19"
+        "door15 door1 door14 door4"
+        "door2 door5 door18 door10";
+
+}
+
+.image {
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    /*grid-area: door5;*/
+}
+
+.text {
+    font-weight: 900;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    color: greenyellow;
+    padding: 10px;
+    border: 1px dashed greenyellow;
+    /**/
+    transition: opacity .6s;
+}
